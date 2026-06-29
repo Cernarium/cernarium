@@ -1,0 +1,57 @@
+{
+  "schema": "cernarium_public_claim_boundary_table_a1",
+  "project": "Cernarium",
+  "mode": "public_method_table",
+  "finding_content": "none",
+  "status": "public_born",
+  "claims": [
+    {
+      "id": "claim.public_claims_are_authored",
+      "allowed_statement": "Public benchmark claims are authored statements with explicit boundaries.",
+      "forbidden_extensions": [
+        "Raw artifacts automatically generate public claims.",
+        "A public claim is valid merely because many artifacts exist.",
+        "A boundary table proves the underlying benchmark result."
+      ],
+      "allowed_replacement": "Raw artifacts may support an authored public claim, but they do not automatically define its public wording."
+    },
+    {
+      "id": "claim.forbidden_extensions_are_required",
+      "allowed_statement": "Each allowed claim should name the stronger statements it does not permit.",
+      "forbidden_extensions": [
+        "A narrow claim can safely imply broader conclusions.",
+        "Unstated limits are enough to prevent overclaim.",
+        "Readers can infer all boundaries from context."
+      ],
+      "allowed_replacement": "A claim boundary should explicitly state its forbidden expansions."
+    },
+    {
+      "id": "claim.allowed_replacements_preserve_usefulness",
+      "allowed_statement": "A forbidden claim should have a safer replacement that remains publishable.",
+      "forbidden_extensions": [
+        "Avoiding overclaim requires saying nothing.",
+        "Every rejected phrase should simply be deleted.",
+        "Bounded publication language is necessarily uninformative."
+      ],
+      "allowed_replacement": "Replace an overstrong phrase with a narrower statement that the boundary permits."
+    },
+    {
+      "id": "claim.public_method_table_contains_no_findings",
+      "allowed_statement": "This public method table demonstrates claim-boundary structure without publishing benchmark findings.",
+      "forbidden_extensions": [
+        "The table reports model behavior.",
+        "The table reports benchmark outcomes.",
+        "The table discloses hidden run evidence."
+      ],
+      "allowed_replacement": "The table is a method sketch showing how public claims can be bounded."
+    }
+  ],
+  "non_claims": [
+    "This table does not publish benchmark findings.",
+    "This table does not prove benchmark truth.",
+    "This table does not prove scorer correctness.",
+    "This table does not claim general model behavior.",
+    "This table does not claim that any undisclosed validation check is complete.",
+    "This table does not claim any universal artifact-content guarantee."
+  ]
+}
