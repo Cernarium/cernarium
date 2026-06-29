@@ -6,6 +6,8 @@
 
 A benchmark result is a valid observation within its own frame, never a general truth.
 
+This is Cernarium's first public object: the method comes before the results it bounds.
+
 Cernarium is a method for keeping the public sentence drawn from a benchmark inside the frame that produced it. A public claim is an authored object: evidence can support it, but it does not write the claim by itself.
 
 ## What this is
